@@ -1,7 +1,5 @@
-(package-refresh-contents)
-
 ;;Package to be installed:
-(setq package-list '(yasnippet web-mode
+(setq package-list '(yasnippet web-mode company-tern js2-mode js2-refactor xref-js2
 			       ))
 (package-initialize)
 
