@@ -1,6 +1,5 @@
 ;;Package to be installed:
-(setq package-list '(yasnippet web-mode company-tern js2-mode js2-refactor xref-js2
-			       ))
+(setq package-list '(yasnippet web-mode company-tern js2-mode js2-refactor xref-js2 helm neotree magit))
 (package-initialize)
 
 ; fetch the list of packages available 
