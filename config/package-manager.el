@@ -50,12 +50,24 @@
 (define-key tern-mode-keymap (kbd "M-,") nil)
 
 
+;;===================== Beacon: https://github.com/Malabarba/beacon
+
+(beacon-mode 1)
+
+;;===================== Setup Helm:
+(require 'helm-config)
+
+(require 'helm)
+(global-set-key (kbd "C-x d") 'helm-find-files)
+(customize-set-variable 'helm-ff-lynx-style-map t)
+
+(with-eval-after-load 'helm-files
+(define-key helm-find-files-map (kbd "C-j") 'helm-find-files-up-one-level)
+(define-key helm-find-files-map (kbd "C-l") 'helm-execute-persistent-action)
+ )
 
 
 
-
-
-
-
-
+(with-eval-after-load 'helm
+ )
 (provide 'package-manager)
