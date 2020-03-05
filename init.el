@@ -34,7 +34,4 @@
  ;; If there is more than one, they won't work right.
  )
 
-(setq electric-pair-preserve-balance nil)
-
-
 

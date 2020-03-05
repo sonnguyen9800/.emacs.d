@@ -104,4 +104,9 @@
 (global-set-key (kbd "C-x g s") 'magit-status)
 (global-set-key (kbd "C-x g p") 'magit-push-popup)
 
+;;==================== Setup electric-pair-mode
+
+(electric-pair-mode 1)
+
+
 (provide 'package-manager)
