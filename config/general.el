@@ -7,5 +7,8 @@
 ;;To disable the toolbar, use the following line:
 (tool-bar-mode -1)
 
+(let ((filename "~/.emacs.d/hello.txt"))
+  (when (file-exists-p filename)
+    (setq initial-buffer-choice filename)))
 
 (provide 'general)

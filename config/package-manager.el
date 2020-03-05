@@ -88,5 +88,9 @@
 
 (projectile-mode +1)
 
+;;==================== Setup magit
+
+(global-set-key (kbd "C-x g") 'magit-status)
+
 
 (provide 'package-manager)
