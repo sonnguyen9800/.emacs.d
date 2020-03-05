@@ -76,4 +76,16 @@
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation
 (global-set-key (kbd "C-<tab>") 'emmet-expand-line)
+
+
+;;===================== Setup Projectile
+
+(require 'projectile)
+
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
+
+(projectile-mode +1)
+
+
 (provide 'package-manager)
