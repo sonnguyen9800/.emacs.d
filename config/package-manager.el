@@ -144,6 +144,11 @@
 (centaur-tabs-mode t)
 (global-set-key (kbd "C-c -")  'centaur-tabs-backward)
 (global-set-key (kbd "C-c =") 'centaur-tabs-forward)
+(setq centaur-tabs-set-icons t)
+(setq centaur-tabs-gray-out-icons 'buffer)
+(setq centaur-tabs-set-bar 'over)
+
+
 
 
 
