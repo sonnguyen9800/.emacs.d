@@ -36,6 +36,11 @@
 (add-hook 'js2-mode-hook (lambda ()
   (add-hook 'xref-backend-functions #'xref-js2-xref-backend nil t)))
 
+;;===================== Company-mode ==========================
+(setq company-minimum-prefix-length 1)
+
+
+
 ;;===================== Tern: https://github.com/ternjs/tern ===
 (require 'company)
 (require 'company-tern)

@@ -14,4 +14,12 @@
         (with-current-buffer scratch-buf
           (erase-buffer)
           (insert-file-contents filename))))))
+
+(let ((file "~/.emacs.d/hello.txt"))
+  (when (file-exists-p file)
+    (setq initial-scratch-message
+      (with-temp-buffer
+        (insert-file-contents file)
+        (buffer-string)))))
+
 (provide 'general)
