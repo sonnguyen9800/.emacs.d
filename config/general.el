@@ -22,4 +22,7 @@
         (insert-file-contents file)
         (buffer-string)))))
 
+(global-set-key (kbd "C-z") 'undo)
+
+
 (provide 'general)

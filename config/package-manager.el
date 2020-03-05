@@ -139,5 +139,13 @@
 (global-auto-complete-mode t)
 
 
+;;==================== Setup centaurs-tab
+(require 'centaur-tabs)
+(centaur-tabs-mode t)
+(global-set-key (kbd "C-c -")  'centaur-tabs-backward)
+(global-set-key (kbd "C-c =") 'centaur-tabs-forward)
+
+
+
 
 (provide 'package-manager)

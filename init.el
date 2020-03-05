@@ -22,11 +22,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(helm-ff-lynx-style-map t t)
+ '(helm-ff-lynx-style-map t)
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (web-beautify tern-auto-complete projectile solarized-theme emmet-mode beacon magit helm all-the-icons neotree yasnippet-snippets ## yasnippet))))
+    (centaur-tabs web-beautify tern-auto-complete projectile solarized-theme emmet-mode beacon magit helm all-the-icons neotree yasnippet-snippets ## yasnippet))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
