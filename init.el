@@ -26,7 +26,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (projectile solarized-theme emmet-mode beacon magit helm all-the-icons neotree yasnippet-snippets ## yasnippet))))
+    (tern-auto-complete projectile solarized-theme emmet-mode beacon magit helm all-the-icons neotree yasnippet-snippets ## yasnippet))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
