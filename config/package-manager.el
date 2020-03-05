@@ -59,15 +59,21 @@
 
 (require 'helm)
 (global-set-key (kbd "C-x d") 'helm-find-files)
+(global-set-key (kbd "C-x C-d") 'helm-find-files)
+(global-set-key (kbd "C-x f") 'helm-find-files)
+
+
 (customize-set-variable 'helm-ff-lynx-style-map t)
 
 (with-eval-after-load 'helm-files
 (define-key helm-find-files-map (kbd "C-j") 'helm-find-files-up-one-level)
 (define-key helm-find-files-map (kbd "C-l") 'helm-execute-persistent-action)
  )
+(with-eval-after-load 'helm)
 
-
-
-(with-eval-after-load 'helm
- )
+;;===================== Setup Emmet
+(require 'emmet-mode)
+(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation
+(global-set-key (kbd "C-<tab>") 'emmet-expand-line)
 (provide 'package-manager)

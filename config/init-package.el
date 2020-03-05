@@ -1,5 +1,5 @@
 ;;Package to be installed:
-(setq package-list '(yasnippet web-mode company-tern js2-mode js2-refactor xref-js2 helm neotree magit beacon))
+(setq package-list '(yasnippet web-mode company-tern js2-mode js2-refactor xref-js2 helm neotree magit beacon solarized-theme))
 (package-initialize)
 
 ;; Quick snippet insertion: yasnippet
@@ -10,7 +10,7 @@
 
 ;; Git: magit
 
-;; Appearance: beacon
+;; Appearance: beacon, solarized-theme
 
 
 ; fetch the list of packages available 

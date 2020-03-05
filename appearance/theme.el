@@ -5,4 +5,6 @@
 
 (require 'helm-config)
 
+;; Load theme: solarized-theme
+(load-theme 'solarized-dark t)
 (provide 'theme)

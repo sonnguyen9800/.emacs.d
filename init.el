@@ -25,7 +25,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (beacon magit helm all-the-icons neotree yasnippet-snippets ## yasnippet))))
+    (solarized-theme emmet-mode beacon magit helm all-the-icons neotree yasnippet-snippets ## yasnippet))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
