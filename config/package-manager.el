@@ -90,7 +90,7 @@
 
 ;;==================== Setup magit
 
-(global-set-key (kbd "C-x g") 'magit-status)
-
+(global-set-key (kbd "C-x g s") 'magit-status)
+(global-set-key (kbd "C-x g p") 'magit-push-popup)
 
 (provide 'package-manager)
