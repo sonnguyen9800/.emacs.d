@@ -149,8 +149,18 @@
 (setq centaur-tabs-set-bar 'over)
 
 
+;;===================== Setup highlight-parentheses
+(require 'highlight-parentheses)
+(define-globalized-minor-mode global-highlight-parentheses-mode
+  highlight-parentheses-mode
+  (lambda ()
+    (highlight-parentheses-mode t)))
+(global-highlight-parentheses-mode t)
 
-
-
+;;===================== Setup zoom: github.com/cyrus-and/zoom
+(custom-set-variables
+ '(zoom-mode t))
+(custom-set-variables
+ '(zoom-size '(0.618 . 0.618)))
 
 (provide 'package-manager)
