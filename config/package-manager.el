@@ -163,4 +163,12 @@
 (custom-set-variables
  '(zoom-size '(0.618 . 0.618)))
 
+
+;;==================== Setup google-this: https://github.com/Malabarba/emacs-google-this
+
+(global-set-key (kbd "C-x g") 'google-this-mode-submap)
+(google-this-mode 1)
+
+
 (provide 'package-manager)
+

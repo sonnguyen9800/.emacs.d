@@ -1,6 +1,7 @@
 ;;Package to be installed:
 (setq package-list '(magit yasnippet web-mode company-tern js2-mode js2-refactor xref-js2
 			   helm neotree magit beacon solarized-theme centaur-tabs projectile
+			   google-this
 			   emmet-mode web-beautify auto-complete highlight-parentheses zoom))
 (package-initialize)
 
@@ -12,8 +13,8 @@
 
 ;; Project manager: Projectile
 
-;; Tools: emmet-mode, centaur-tabs, web-beautify, auto-complete, highlight-parenthese
-
+;; Tools: emmet-mode, centaur-tabs, web-beautify, auto-complete, highlight-parenthese,
+;;        google-this
 ;; Git: magit
 
 ;; Appearance: beacon, solarized-theme, zoom
