@@ -26,7 +26,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (php-mode google-this zoom highlight-parentheses centaur-tabs web-beautify tern-auto-complete projectile solarized-theme emmet-mode beacon magit helm all-the-icons neotree yasnippet-snippets ## yasnippet)))
+    (yaml-mode php-mode google-this zoom highlight-parentheses centaur-tabs web-beautify tern-auto-complete projectile solarized-theme emmet-mode beacon magit helm all-the-icons neotree yasnippet-snippets ## yasnippet)))
  '(zoom-mode t nil (zoom))
  '(zoom-size (quote (0.618 . 0.618))))
 (custom-set-faces
