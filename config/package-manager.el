@@ -165,11 +165,8 @@
 
 
 ;;==================== Setup google-this: https://github.com/Malabarba/emacs-google-this
-
-(global-set-key (kbd "C-x g-o") 'google-this-mode-submap)
+(global-set-key (kbd "C-x C-g") 'google-this)
 (google-this-mode 1)
-
-
 
 ;;=================== Setup php-mode: https://github.com/emacs-php/php-mode
 (add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
