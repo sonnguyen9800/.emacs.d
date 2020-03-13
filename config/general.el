@@ -25,4 +25,8 @@
 (global-set-key (kbd "C-z") 'undo)
 
 
+;; Glolbal Set: comment/uncomment region:
+(global-set-key (kbd "C-/") 'comment-or-uncomment-region)
+
+
 (provide 'general)

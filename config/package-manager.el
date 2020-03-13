@@ -78,9 +78,6 @@
 (eval-after-load 'css-mode
   '(define-key css-mode-map (kbd "C-c b") 'web-beautify-css))
 
-;;==================== Setup auto-completion mode
-(require 'auto-complete-config)
-(global-auto-complete-mode t)
 
 ;;==================== Setup centaurs-tab
 (require 'centaur-tabs)
@@ -113,10 +110,30 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 
-;;================= LSP
-
-
 ;;================ Setup company-lsp
 (require 'company-lsp)
 (push 'company-lsp company-backends)
+(use-package lsp-ui)
+
+(setq lsp-ui-sideline-show-diagnostics t)
+(setq lsp-ui-sideline-show-hover t)
+(setq lsp-ui-sideline-show-code-actions t)
+
+;;lsp-ui-doc
+;;'(lsp-ui-doc-enable t)
+'(lsp-ui-doc-position (quote top))
+(global-set-key (kbd "C-c l-d") 'lsp-ui-doc-show)
+ 
+;;lsp-ui-imenu
+'(lsp-ui-imenu-enable t)
+'(lsp-ui-imenu-kind-position (quote top))
+ 
+;;lsp-ui-sideline
+'(lsp-ui-sideline-enable t)
+'(lsp-ui-sideline-update-mode t)
+'(lsp-ui-sideline-show-code-actions t)
+'(lsp-ui-sideline-show-diagnostics t)
+'(lsp-ui-sideline-show-hover t)
+'(lsp-ui-sideline-show-symbol t)
+
 (provide 'package-manager)
