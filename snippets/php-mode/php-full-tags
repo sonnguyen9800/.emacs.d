@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: php Opening and Closing tags
+# key: php-full-tags
+# --
+<?php
+
+?>

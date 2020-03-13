@@ -1,7 +1,8 @@
 ;;Package to be installed:
 (setq package-list '(magit yasnippet web-mode company-tern js2-mode js2-refactor xref-js2
 			   helm neotree magit beacon solarized-theme centaur-tabs projectile
-			   php-mode
+
+			   php-mode company-php
 			   google-this
 			   emmet-mode web-beautify auto-complete highlight-parentheses zoom))
 (package-initialize)
