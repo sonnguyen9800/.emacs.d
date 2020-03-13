@@ -1,9 +1,10 @@
 elpa/
 auto-save-list/
 eshell/
-
+*~
 projectile.*
 projectile-bookmarks.eld
 *lsp-session*
 lsp-cache/
 *session*
+ac-comphist.dat
