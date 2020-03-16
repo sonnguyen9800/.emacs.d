@@ -1,3 +1,4 @@
+
 (add-to-list 'load-path "~/.emacs.d/config/javascript-bundle.el")
 (add-to-list 'load-path "~/.emacs.d/config/php-bundle.el")
 
@@ -22,11 +23,14 @@
 (yas-global-mode 1)
 ;;===================== Company-mode ==========================
 (setq company-minimum-prefix-length 1)
+(setq company-dabbrev-downcase 0)
+(setq company-idle-delay 0)
+
+
 ;;===================== Beacon: https://github.com/Malabarba/beacon
 (beacon-mode 1)
 ;;===================== Setup Helm:
 (require 'helm-config)
-
 (require 'helm)
 (global-set-key (kbd "C-x d") 'helm-find-files)
 (global-set-key (kbd "C-x C-d") 'helm-find-files)
@@ -77,8 +81,6 @@
 
 (eval-after-load 'css-mode
   '(define-key css-mode-map (kbd "C-c b") 'web-beautify-css))
-
-
 ;;==================== Setup centaurs-tab
 (require 'centaur-tabs)
 (centaur-tabs-mode t)
@@ -110,30 +112,59 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 
-;;================ Setup company-lsp
-(require 'company-lsp)
-(push 'company-lsp company-backends)
-(use-package lsp-ui)
 
-(setq lsp-ui-sideline-show-diagnostics t)
-(setq lsp-ui-sideline-show-hover t)
-(setq lsp-ui-sideline-show-code-actions t)
+;; ;;================ Setup company-lsp
+;; (require 'company-lsp)
+;; (push 'company-lsp company-backends)
 
-;;lsp-ui-doc
-;;'(lsp-ui-doc-enable t)
-'(lsp-ui-doc-position (quote top))
-(global-set-key (kbd "C-c l-d") 'lsp-ui-doc-show)
+;; ;;===================== Setup lsp-mode
+;; (require 'lsp-mode)
+
+;; (global-set-key (kbd "C-c l s") 'lsp)
+;; (add-hook 'php-mode-hook #'lsp)
+
+;; ;; Auto open lsp when the detected file matched any given extension
+
+
+
+
+;; ;; ===================== Setup lsp-ui-mode
+;; (setq lsp-auto-configure t)
+
+
+
+
+
+;;==================== Setup dashboard: https://github.com/emacs-dashboard/emacs-dashboard
+(require 'dashboard)
+(dashboard-setup-startup-hook)
+
+(setq dashboard-banner-logo-title "Have a good day Mr.Son, good luck and do not forget you have a tons of work to do!")
+
+(defun read-lines (filePath)
+  "Return a list of lines of a file at filePath."
+  (with-temp-buffer
+    (insert-file-contents filePath)
+    (split-string (buffer-string) "\n" t)))
+
+(custom-set-variables
+       ;; custom-set-variables was added by Custom.
+       ;; If you edit it by hand, you could mess it up, so be careful.
+       ;; Your init file should contain only one such instance.
+       ;; If there is more than one, they won't work right.
+ '(dashboard-footer-messages  (read-lines "~/.emacs.d/footnotes-dashboard.txt")))
  
-;;lsp-ui-imenu
-'(lsp-ui-imenu-enable t)
-'(lsp-ui-imenu-kind-position (quote top))
- 
-;;lsp-ui-sideline
-'(lsp-ui-sideline-enable t)
-'(lsp-ui-sideline-update-mode t)
-'(lsp-ui-sideline-show-code-actions t)
-'(lsp-ui-sideline-show-diagnostics t)
-'(lsp-ui-sideline-show-hover t)
-'(lsp-ui-sideline-show-symbol t)
+
+
+;; (setq dashboard-footer-messages  (read-lines "~/.emacs.d/footnotes-dashboard.txt"))
+;;=================== Setup page-break-lines: https://github.com/purcell/page-break-lines
+(require 'page-break-lines)
+(turn-on-page-break-lines-mode)
+
+
+;;================== Setup intent-guide: https://github.com/zk-phi/indent-guide
+(require 'indent-guide)
+(indent-guide-global-mode)
+
 
 (provide 'package-manager)

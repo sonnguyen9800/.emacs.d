@@ -28,5 +28,12 @@
 ;; Glolbal Set: comment/uncomment region:
 (global-set-key (kbd "C-/") 'comment-or-uncomment-region)
 
+;; Setup linum mode
+(require 'linum)
+(setq linum-format
+      (lambda (line)
+        (propertize (number-to-string (1- line)) 'face 'linum)))
+
+(global-linum-mode 1)
 
 (provide 'general)
