@@ -41,4 +41,31 @@
 ;; Starting emacs at fullscreen:
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
+
+;; Add youtube quick search function:
+(defun er-youtube ()
+  "Search YouTube with a query or region if any."
+  (interactive)
+  (browse-url
+   (concat
+    "http://www.youtube.com/results?search_query="
+    (url-hexify-string (if mark-active
+                           (buffer-substring (region-beginning) (region-end))
+                         (read-string "Search YouTube: "))))))
+
+(global-set-key (kbd "C-c y") #'er-youtube)
+
+;; Add wikipedia quick search function:
+
+(defun er-wikipedia ()
+  "Search YouTube with a query or region if any."
+  (interactive)
+  (browse-url
+   (concat
+    "https://wikipedia.org/w/index.php?search="
+    (url-hexify-string (if mark-active
+                           (buffer-substring (region-beginning) (region-end))
+                         (read-string "Search Wikipedia: "))))))
+
+(global-set-key (kbd "C-c w") #'er-wikipedia)
 (provide 'general)

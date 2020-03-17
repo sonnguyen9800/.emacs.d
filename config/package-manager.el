@@ -169,4 +169,14 @@
 (smart-tabs-insinuate 'c 'javascript)
 
 
+;;================= Setup smart-semicolons
+(require 'smart-semicolon)
+(add-hook 'php-mode-hook #'smart-semicolon-mode)
+
+
+;;================= Setup neotree
+(setq neo-smart-open t)
+(setq projectile-switch-project-action 'neotree-projectile-action)
+
+
 (provide 'package-manager)

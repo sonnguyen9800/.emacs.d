@@ -27,7 +27,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (smart-tabs-mode php-auto-yasnippets indent-guide eglot dashboard page-break-lines lsp-ui flycheck lsp-mode ac-php company-php yaml-mode php-mode google-this zoom highlight-parentheses centaur-tabs web-beautify tern-auto-complete projectile solarized-theme emmet-mode beacon magit helm all-the-icons neotree yasnippet-snippets ## yasnippet)))
+    (smartparens smart-semicolon smart-tabs-mode php-auto-yasnippets indent-guide eglot dashboard page-break-lines lsp-ui flycheck lsp-mode ac-php company-php yaml-mode php-mode google-this zoom highlight-parentheses centaur-tabs web-beautify tern-auto-complete projectile solarized-theme emmet-mode beacon magit helm all-the-icons neotree yasnippet-snippets ## yasnippet)))
  '(zoom-mode t nil (zoom))
  '(zoom-size (quote (0.618 . 0.618))))
 (custom-set-faces
