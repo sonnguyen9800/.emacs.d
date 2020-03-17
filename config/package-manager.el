@@ -165,6 +165,8 @@
 (require 'indent-guide)
 (indent-guide-global-mode)
 
+;;================= Setup smart-tabs-mode
+(smart-tabs-insinuate 'c 'javascript)
 
 
 (provide 'package-manager)

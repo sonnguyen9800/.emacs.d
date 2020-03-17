@@ -3,7 +3,7 @@
 			   helm neotree magit beacon solarized-theme centaur-tabs projectile
 			   php-mode company-php php-auto-yasnippets
 			   lsp-mode company-lsp flycheck dashboard 
-			   google-this
+			   google-this linum smart-tabs-mode
 			   emmet-mode web-beautify auto-complete highlight-parentheses zoom))
 (package-initialize)
 
@@ -19,7 +19,7 @@
 ;; Project manager: Projectile
 
 ;; Tools: emmet-mode, centaur-tabs, web-beautify, auto-complete, highlight-parenthese,
-;;        google-this, dashboard
+;;        google-this, dashboard, linum smart-tabs-mode
 ;; Git: magit
 
 ;; Appearance: beacon, solarized-theme, zoom

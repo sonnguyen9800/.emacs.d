@@ -36,4 +36,9 @@
 
 (global-linum-mode 1)
 
+
+
+;; Starting emacs at fullscreen:
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 (provide 'general)
