@@ -1,4 +1,3 @@
-
 (add-to-list 'load-path "~/.emacs.d/config/javascript-bundle.el")
 (add-to-list 'load-path "~/.emacs.d/config/php-bundle.el")
 
@@ -165,6 +164,7 @@
 ;;================== Setup intent-guide: https://github.com/zk-phi/indent-guide
 (require 'indent-guide)
 (indent-guide-global-mode)
+
 
 
 (provide 'package-manager)

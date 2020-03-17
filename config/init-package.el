@@ -1,8 +1,8 @@
 ;;Package to be installed:
 (setq package-list '(magit yasnippet web-mode company-tern js2-mode js2-refactor xref-js2
 			   helm neotree magit beacon solarized-theme centaur-tabs projectile
-			   php-mode company-php
-			   lsp-mode company-lsp flycheck
+			   php-mode company-php php-auto-yasnippets
+			   lsp-mode company-lsp flycheck dashboard 
 			   google-this
 			   emmet-mode web-beautify auto-complete highlight-parentheses zoom))
 (package-initialize)
@@ -11,7 +11,7 @@
 ;; Quick highlighting and programming on Web: web-mode
 ;; Javascript Development: company-tern, js-mode, js2-refactor xref-js2, tern
 
-;; PHP Mode: php-mode
+;; PHP Mode: php-mode, company-php, php-auto-yasnippets
 
 
 ;; Navigation: help, neotree
@@ -19,7 +19,7 @@
 ;; Project manager: Projectile
 
 ;; Tools: emmet-mode, centaur-tabs, web-beautify, auto-complete, highlight-parenthese,
-;;        google-this
+;;        google-this, dashboard
 ;; Git: magit
 
 ;; Appearance: beacon, solarized-theme, zoom
