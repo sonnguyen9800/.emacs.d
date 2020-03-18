@@ -1,9 +1,12 @@
 (add-to-list 'load-path "~/.emacs.d/config/javascript-bundle.el")
 (add-to-list 'load-path "~/.emacs.d/config/php-bundle.el")
+(add-to-list 'load-path "~/.emacs.d/config/yaml-bundle.el")
+(add-to-list 'load-path "~/.emacs.d/config/htm-css-bundle.el")
 
 (require 'javascript-bundle)
 (require 'php-bundle)
-
+(require 'yaml-bundle)
+(require 'html-css-bundle)
 ;;===================== Yasnippet =========
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -24,7 +27,7 @@
 (setq company-minimum-prefix-length 1)
 (setq company-dabbrev-downcase 0)
 (setq company-idle-delay 0)
-
+(add-hook 'after-init-hook 'global-company-mode)
 
 ;;===================== Beacon: https://github.com/Malabarba/beacon
 (beacon-mode 1)
@@ -53,11 +56,9 @@
 (define-key projectile-mode-map (kbd "C-c C-p") 'projectile-command-map)
 (setq projectile-project-search-path '("~/Projects/"))
 (projectile-mode +1)
-
 ;;==================== Setup magit
 (global-set-key (kbd "C-x g s") 'magit-status)
 (global-set-key (kbd "C-x g p") 'magit-push-popup)
-
 ;;==================== Setup electric-pair-mode
 (electric-pair-mode 1)
 
@@ -107,14 +108,9 @@
 (global-set-key (kbd "C-x C-g") 'google-this)
 (google-this-mode 1)
 
-;;================== Setup yaml-mode: https://github.com/yoshiki/yaml-mode
-(require 'yaml-mode)
-(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
-
-
-;; ;;================ Setup company-lsp
-;; (require 'company-lsp)
-;; (push 'company-lsp company-backends)
+;;================ Setup company-lsp
+(require 'company-lsp)
+(push 'company-lsp company-backends)
 
 ;; ;;===================== Setup lsp-mode
 ;; (require 'lsp-mode)
@@ -123,9 +119,6 @@
 ;; (add-hook 'php-mode-hook #'lsp)
 
 ;; ;; Auto open lsp when the detected file matched any given extension
-
-
-
 
 ;; ;; ===================== Setup lsp-ui-mode
 ;; (setq lsp-auto-configure t)

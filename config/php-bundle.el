@@ -34,6 +34,21 @@
 (setq php-auto-yasnippet-php-program "~/.emacs.d/elpa/php-auto-yasnippets-2.3.1/Create-PHP-YASnippet.php")
 (define-key php-mode-map (kbd "C-<tab>") 'yas/create-php-snippet)
 
+;;================== Using Webmode only when there is mix between php and html
+(defun add-auto-mode (mode &rest patterns)
+  (mapc (lambda (pattern)
+          (add-to-list 'auto-mode-alist (cons pattern mode)))
+        patterns))
 
 
+(add-auto-mode 'web-mode
+               "*html*"  )
+
+
+
+;; THE BELOW CODE IS VERY INTERESING, HOWEVER, WE FOCUS ON PHP ONLY
+
+;; (add-auto-mode 'web-mode
+;;                "*html*" "*twig*" "*tmpl*" "\\.erb" "\\.rhtml$" "\\.ejs$" "\\.hbs$"
+;;                "\\.ctp$" "\\.tpl$" "/\\(views\\|html\\|templates\\)/.*\\.php$")
 (provide 'php-bundle)
