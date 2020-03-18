@@ -1,12 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d/config/javascript-bundle.el")
 (add-to-list 'load-path "~/.emacs.d/config/php-bundle.el")
 (add-to-list 'load-path "~/.emacs.d/config/yaml-bundle.el")
-(add-to-list 'load-path "~/.emacs.d/config/htm-css-bundle.el")
-
-(require 'javascript-bundle)
-(require 'php-bundle)
-(require 'yaml-bundle)
-(require 'html-css-bundle)
+(add-to-list 'load-path "~/.emacs.d/config/html-css-bundle.el")
 ;;===================== Yasnippet =========
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -105,7 +100,7 @@
  '(zoom-size '(0.618 . 0.618)))
 
 ;;==================== Setup google-this: https://github.com/Malabarba/emacs-google-this
-(global-set-key (kbd "C-x C-g") 'google-this)
+(global-set-key (kbd "C-c C-g") 'google-this)
 (google-this-mode 1)
 
 ;;================ Setup company-lsp
@@ -152,15 +147,11 @@
 ;;=================== Setup page-break-lines: https://github.com/purcell/page-break-lines
 (require 'page-break-lines)
 (turn-on-page-break-lines-mode)
-
-
 ;;================== Setup intent-guide: https://github.com/zk-phi/indent-guide
 (require 'indent-guide)
 (indent-guide-global-mode)
-
 ;;================= Setup smart-tabs-mode
 (smart-tabs-insinuate 'c 'javascript)
-
 
 ;;================= Setup smart-semicolons
 (require 'smart-semicolon)
@@ -171,5 +162,15 @@
 (setq neo-smart-open t)
 (setq projectile-switch-project-action 'neotree-projectile-action)
 
+
+(add-to-list 'auto-mode-alist '("\\.css?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+
+
+(require 'javascript-bundle)
+(require 'php-bundle)
+(require 'yaml-bundle)
+(require 'html-css-bundle)
 
 (provide 'package-manager)
