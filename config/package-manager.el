@@ -1,3 +1,4 @@
+
 (add-to-list 'load-path "~/.emacs.d/config/javascript-bundle.el")
 (add-to-list 'load-path "~/.emacs.d/config/php-bundle.el")
 (add-to-list 'load-path "~/.emacs.d/config/yaml-bundle.el")
@@ -56,26 +57,6 @@
 (global-set-key (kbd "C-x g p") 'magit-push-popup)
 ;;==================== Setup electric-pair-mode
 (electric-pair-mode 1)
-
-;;==================== Setup web-beautify
-(require 'web-beautify) ;; Not necessary if using ELPA package
-(eval-after-load 'js2-mode
-  '(define-key js2-mode-map (kbd "C-c b") 'web-beautify-js))
-;; Or if you're using 'js-mode' (a.k.a 'javascript-mode')
-(eval-after-load 'js
-  '(define-key js-mode-map (kbd "C-c b") 'web-beautify-js))
-
-(eval-after-load 'json-mode
-  '(define-key json-mode-map (kbd "C-c b") 'web-beautify-js))
-
-(eval-after-load 'sgml-mode
-  '(define-key html-mode-map (kbd "C-c b") 'web-beautify-html))
-
-(eval-after-load 'web-mode
-  '(define-key web-mode-map (kbd "C-c b") 'web-beautify-html))
-
-(eval-after-load 'css-mode
-  '(define-key css-mode-map (kbd "C-c b") 'web-beautify-css))
 ;;==================== Setup centaurs-tab
 (require 'centaur-tabs)
 (centaur-tabs-mode t)
@@ -119,9 +100,6 @@
 ;; (setq lsp-auto-configure t)
 
 
-
-
-
 ;;==================== Setup dashboard: https://github.com/emacs-dashboard/emacs-dashboard
 (require 'dashboard)
 (dashboard-setup-startup-hook)
@@ -162,9 +140,6 @@
 (setq neo-smart-open t)
 (setq projectile-switch-project-action 'neotree-projectile-action)
 
-
-(add-to-list 'auto-mode-alist '("\\.css?\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
 
 
