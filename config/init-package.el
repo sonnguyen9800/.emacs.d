@@ -2,7 +2,7 @@
 (setq package-list '(magit yasnippet web-mode company-tern js2-mode js2-refactor xref-js2
 			   helm neotree magit beacon solarized-theme centaur-tabs projectile
 			   php-mode company-php php-auto-yasnippets
-			   lsp-mode company-lsp flycheck dashboard 
+			   lsp-mode company-lsp flycheck dashboard ido-vertical-mode 
 			   google-this linum smart-tabs-mode smart-semicolon
 			   emmet-mode web-beautify auto-complete highlight-parentheses zoom))
 (package-initialize)
