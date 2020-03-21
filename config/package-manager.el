@@ -32,7 +32,10 @@
 (require 'helm)
 (global-set-key (kbd "C-x d") 'helm-find-files)
 (global-set-key (kbd "C-x C-d") 'helm-find-files)
+(gloabl-set-key (kbd "C-x C-f") 'helm-find-files')
 (global-set-key (kbd "C-x f") 'helm-find-files)
+
+
 (global-set-key (kbd "M-x") 'helm-M-x)
 (customize-set-variable 'helm-ff-lynx-style-map t)
 (with-eval-after-load 'helm-files
@@ -57,6 +60,8 @@
 (global-set-key (kbd "C-x g p") 'magit-push-popup)
 ;;==================== Setup electric-pair-mode
 (electric-pair-mode 1)
+(push '(?\' . ?\') electric-pair-pairs)      ; Automatically pair single-quotes
+
 ;;==================== Setup centaurs-tab
 (require 'centaur-tabs)
 (centaur-tabs-mode t)

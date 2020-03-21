@@ -41,14 +41,14 @@
         patterns))
 
 
-(add-auto-mode 'web-mode
-               "*html*"  )
+;; (add-auto-mode 'web-mode
+;;                "*html*"  )
 
 
 
 ;; THE BELOW CODE IS VERY INTERESING, HOWEVER, WE FOCUS ON PHP ONLY
 
-;; (add-auto-mode 'web-mode
-;;                "*html*" "*twig*" "*tmpl*" "\\.erb" "\\.rhtml$" "\\.ejs$" "\\.hbs$"
-;;                "\\.ctp$" "\\.tpl$" "/\\(views\\|html\\|templates\\)/.*\\.php$")
+(add-auto-mode 'web-mode
+               "*html*" "*twig*" "*tmpl*" "\\.erb" "\\.rhtml$" "\\.ejs$" "\\.hbs$"
+               "\\.ctp$" "\\.tpl$" "/\\(views\\|html\\|templates\\)/.*\\.php$")
 (provide 'php-bundle)
