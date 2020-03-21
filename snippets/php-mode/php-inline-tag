@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: php inline tags
+# key: PHP-inline-tag
+# --
+
+<?php  ?>

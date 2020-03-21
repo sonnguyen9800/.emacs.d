@@ -19,6 +19,7 @@
 ;; For yas - snippet generator
 (require 'yasnippet)
 (yas-global-mode 1)
+;;(global-set-key (kbd "C-c C-y") 'yas-insert-snippet)
 ;;===================== Company-mode ==========================
 (setq company-minimum-prefix-length 1)
 (setq company-dabbrev-downcase 0)
@@ -32,7 +33,7 @@
 (require 'helm)
 (global-set-key (kbd "C-x d") 'helm-find-files)
 (global-set-key (kbd "C-x C-d") 'helm-find-files)
-(gloabl-set-key (kbd "C-x C-f") 'helm-find-files')
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "C-x f") 'helm-find-files)
 
 
@@ -55,6 +56,13 @@
 (define-key projectile-mode-map (kbd "C-c C-p") 'projectile-command-map)
 (setq projectile-project-search-path '("~/Projects/"))
 (projectile-mode +1)
+
+;;===================== Setup ido-vertical-mode
+(require 'ido-vertical-mode)
+(ido-mode 1)
+(ido-vertical-mode 1)
+
+
 ;;==================== Setup magit
 (global-set-key (kbd "C-x g s") 'magit-status)
 (global-set-key (kbd "C-x g p") 'magit-push-popup)
