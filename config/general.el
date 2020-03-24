@@ -68,4 +68,12 @@
                          (read-string "Search Wikipedia: "))))))
 
 (global-set-key (kbd "C-c w") #'er-wikipedia)
+
+
+;; Set keybinding for save:
+(global-set-key (kbd "C-c s") 'save-buffer )
+(global-set-key (kbd "C-x s") 'save-buffer )
+(global-set-key (kbd "C-c C-s") 'save-buffer )
+
+
 (provide 'general)

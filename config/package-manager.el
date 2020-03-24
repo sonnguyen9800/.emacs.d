@@ -19,7 +19,7 @@
 ;; For yas - snippet generator
 (require 'yasnippet)
 (yas-global-mode 1)
-;;(global-set-key (kbd "C-c C-y") 'yas-insert-snippet)
+(global-set-key (kbd "C-c C-y") 'yas-insert-snippet)
 ;;===================== Company-mode ==========================
 (setq company-minimum-prefix-length 1)
 (setq company-dabbrev-downcase 0)
