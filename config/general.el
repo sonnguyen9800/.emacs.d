@@ -84,4 +84,11 @@
                                            nil
                                            'fullboth)))
 (global-set-key [(meta return)] 'toggle-fullscreen)
+
+;; Windmove Setup: https://www.emacswiki.org/emacs/WindMove
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
+(windmove-default-keybindings 'meta)
+
+
 (provide 'general)
