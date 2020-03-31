@@ -102,15 +102,31 @@
 (push 'company-lsp company-backends)
 
 ;; ;;===================== Setup lsp-mode
-;; (require 'lsp-mode)
+(require 'lsp-mode)
 
-;; (global-set-key (kbd "C-c l s") 'lsp)
-;; (add-hook 'php-mode-hook #'lsp)
+(global-set-key (kbd "C-c l s") 'lsp)
+(add-hook 'php-mode-hook #'lsp)
+(add-hook 'web-mode-hook' #'lsp)
 
 ;; ;; Auto open lsp when the detected file matched any given extension
 
 ;; ;; ===================== Setup lsp-ui-mode
 ;; (setq lsp-auto-configure t)
+  (setq lsp-ui-doc-max-height 13
+        lsp-ui-doc-max-width 80
+        lsp-ui-sideline-ignore-duplicate t
+        lsp-ui-doc-header t
+        lsp-ui-doc-include-signature t
+        lsp-ui-doc-position 'top
+        lsp-ui-doc-use-webkit nil
+        lsp-ui-flycheck-enable t
+        lsp-ui-imenu-kind-position 'left
+        
+        ;; fix for completing candidates not showing after “Enum.”:
+        company-lsp-match-candidate-predicate #'company-lsp-match-candidate-prefix
+        )
+
+
 
 
 ;;==================== Setup dashboard: https://github.com/emacs-dashboard/emacs-dashboard
@@ -133,11 +149,6 @@
  '(dashboard-footer-messages  (read-lines "~/.emacs.d/footnotes-dashboard.txt")))
  
 
-
-
-
-
-;; (setq dashboard-footer-messages  (read-lines "~/.emacs.d/footnotes-dashboard.txt"))
 ;;=================== Setup page-break-lines: https://github.com/purcell/page-break-lines
 (require 'page-break-lines)
 (turn-on-page-break-lines-mode)
