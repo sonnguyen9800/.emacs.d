@@ -3,7 +3,7 @@
 			   helm neotree magit beacon solarized-theme centaur-tabs projectile
 			   php-mode company-php php-auto-yasnippets
 			   lsp-mode company-lsp flycheck dashboard ido-vertical-mode 
-			   smooth-scrolling google-this linum smart-tabs-mode smart-semicolon
+			   google-this linum smart-tabs-mode smart-semicolon
 			   emmet-mode web-beautify auto-complete highlight-parentheses zoom))
 (package-initialize)
 
