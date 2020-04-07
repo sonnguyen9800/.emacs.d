@@ -191,6 +191,12 @@
 
 
 
+;; Setup smooth-scroll https://github.com/aspiers/smooth-scrolling
+(require 'smooth-scroll)
+(require 'smooth-scrolling)
+(smooth-scrolling-mode 1)
+
+
 
 (require 'javascript-bundle)
 (require 'php-bundle)
