@@ -7,21 +7,6 @@
 ;;To disable the toolbar, use the following line:
 (tool-bar-mode -1)
 
-(let ((filename (concat user-emacs-directory "hello.txt")))
-  (when (file-exists-p filename)
-    (let ((scratch-buf (get-buffer "*scratch*")))
-      (when scratch-buf
-        (with-current-buffer scratch-buf
-          (erase-buffer)
-          (insert-file-contents filename))))))
-
-(let ((file "~/.emacs.d/hello.txt"))
-  (when (file-exists-p file)
-    (setq initial-scratch-message
-      (with-temp-buffer
-        (insert-file-contents file)
-        (buffer-string)))))
-
 (global-set-key (kbd "C-z") 'undo)
 
 
@@ -68,6 +53,19 @@
                          (read-string "Search Wikipedia: "))))))
 
 (global-set-key (kbd "C-c w") #'er-wikipedia)
+
+(defun er-google ()
+  "Search Google"
+  (interactive)
+  (browse-url
+   (concat
+    "https://www.google.com/search?q="
+    (url-hexify-string (if mark-active
+                           (buffer-substring (region-beginning) (region-end))
+                         (read-string "Search Google: "))))))
+
+(global-set-key (kbd "C-c g") #'er-google)
+
 
 
 ;; Set keybinding for save:

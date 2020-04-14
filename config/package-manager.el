@@ -95,10 +95,6 @@
 (custom-set-variables
  '(zoom-size '(0.618 . 0.618)))
 
-;;==================== Setup google-this: https://github.com/Malabarba/emacs-google-this
-(global-set-key (kbd "C-c C-g") 'google-this)
-(google-this-mode 1)
-
 ;;================ Setup company-lsp
 (require 'company-lsp)
 (push 'company-lsp company-backends)
@@ -115,9 +111,6 @@
 ;; ;; ===================== Setup lsp-ui-mode
 (setq lsp-ui-doc-enable nil)
 (setq lsp-ui-peek-enable nil)
-
-
-
 
 ;;==================== Setup dashboard: https://github.com/emacs-dashboard/emacs-dashboard
 (require 'dashboard)
@@ -155,7 +148,6 @@
 (add-hook 'js2-jsx-mode-hook #'smart-semicolon-mode)
 (add-hook 'javascript-mode-hook #'smart-semicolon-mode)
 
-
 ;;================= Setup neotree
 (setq neo-smart-open t)
 (setq projectile-switch-project-action 'neotree-projectile-action)
@@ -179,11 +171,7 @@
 ;; need another one for python stuff, since this gets re-bound
 (global-set-key (kbd "C-c C-p") 'neotree-project-dir)
 
-
 (setq neo-autorefresh nil)
-
-
-
 
 
 (require 'javascript-bundle)
