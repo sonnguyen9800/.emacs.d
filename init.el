@@ -27,7 +27,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (js2-mode rjsx-mode yasnippet-snippets ## yasnippet)))
+    (tern js2-mode rjsx-mode yasnippet-snippets ## yasnippet)))
  '(zoom-mode t nil (zoom))
  '(zoom-size (quote (0.618 . 0.618))))
 (custom-set-faces
