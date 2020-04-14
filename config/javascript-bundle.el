@@ -1,7 +1,12 @@
 ;;This is all config for javascript development packages
 
-(require 'js2-mode)
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+;; (require 'js2-mode)
+;; (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
+(require 'rjsx-mode)
+(add-to-list 'auto-mode-alist '("components\\/.*\\.js\\'" . rjsx-mode))
+
+
 ;; Better imenu
 (add-hook 'js2-mode-hook #'js2-imenu-extras-mode)
 

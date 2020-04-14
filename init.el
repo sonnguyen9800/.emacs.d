@@ -25,7 +25,7 @@
  '(dashboard-footer-messages (read-lines "~/.emacs.d/footnotes-dashboard.txt"))
  '(helm-ff-lynx-style-map t)
  '(inhibit-startup-screen t)
- '(package-selected-packages (quote (smooth-scrolling yasnippet-snippets ## yasnippet)))
+ '(package-selected-packages (quote (rjsx-mode yasnippet-snippets ## yasnippet)))
  '(zoom-mode t nil (zoom))
  '(zoom-size (quote (0.618 . 0.618))))
 (custom-set-faces

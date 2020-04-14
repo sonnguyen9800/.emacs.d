@@ -3,6 +3,8 @@
 (add-to-list 'load-path "~/.emacs.d/config/php-bundle.el")
 (add-to-list 'load-path "~/.emacs.d/config/yaml-bundle.el")
 (add-to-list 'load-path "~/.emacs.d/config/html-css-bundle.el")
+(add-to-list 'load-path "~/.emacs.d/config/json-bundle.el.el")
+
 ;;===================== Yasnippet =========
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -161,6 +163,9 @@
 ;;================= Setup smart-semicolons
 (require 'smart-semicolon)
 (add-hook 'php-mode-hook #'smart-semicolon-mode)
+(add-hook 'js-jsx-mode-hook #'smart-semicolon-mode)
+(add-hook 'js2-jsx-mode-hook #'smart-semicolon-mode)
+(add-hook 'javascript-mode-hook #'smart-semicolon-mode)
 
 
 ;;================= Setup neotree
@@ -194,6 +199,7 @@
 
 
 (require 'javascript-bundle)
+(require 'json-bundle)
 (require 'php-bundle)
 (require 'yaml-bundle)
 (require 'html-css-bundle)
