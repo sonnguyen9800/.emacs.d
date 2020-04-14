@@ -1,17 +1,19 @@
 ;;Package to be installed:
-(setq package-list '(magit yasnippet web-mode company-tern rjsx-mode js2-refactor xref-js2
-			   helm neotree magit beacon solarized-theme centaur-tabs projectile
-			   php-mode company-php php-auto-yasnippets json-mode
-			   lsp-mode company-lsp flycheck dashboard ido-vertical-mode 
-			   google-this linum smart-tabs-mode smart-semicolon
-			   emmet-mode web-beautify auto-complete highlight-parentheses zoom))
+(setq package-list '(magit
+		     yasnippet web-mode rjsx-mode js2-mode
+		     helm neotree magit beacon solarized-theme centaur-tabs projectile
+		     php-mode company-php php-auto-yasnippets json-mode
+		     lsp-mode company-lsp flycheck dashboard ido-vertical-mode 
+		     google-this linum smart-tabs-mode smart-semicolon
+		     emmet-mode web-beautify auto-complete highlight-parentheses zoom))
 (package-initialize)
 
 ;; Quick snippet insertion: yasnippet
 ;; Quick highlighting and programming on Web: web-mode
-;; Javascript Development: company-tern, js-mode, js2-refactor xref-js2, tern
+;; Javascript Development: rjsx-mode
 
 ;; PHP Mode: php-mode, company-php, php-auto-yasnippets
+
 
 
 ;; Navigation: help, neotree
