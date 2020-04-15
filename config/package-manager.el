@@ -144,9 +144,9 @@
 ;;================= Setup smart-semicolons
 (require 'smart-semicolon)
 (add-hook 'php-mode-hook #'smart-semicolon-mode)
-(add-hook 'js-jsx-mode-hook #'smart-semicolon-mode)
-(add-hook 'js2-jsx-mode-hook #'smart-semicolon-mode)
+(add-hook 'js2-mode-hook #'smart-semicolon-mode)
 (add-hook 'javascript-mode-hook #'smart-semicolon-mode)
+(add-hook 'rjsx-mode-hook #'smart-semicolon-mode)
 
 ;;================= Setup neotree
 (setq neo-smart-open t)

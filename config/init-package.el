@@ -1,5 +1,5 @@
 ;;Package to be installed:
-(setq package-list '(magit
+(setq package-list '(magit tern company-tern
 		     yasnippet web-mode rjsx-mode js2-mode
 		     helm neotree magit beacon solarized-theme centaur-tabs projectile
 		     php-mode company-php php-auto-yasnippets json-mode
