@@ -175,6 +175,9 @@
 
 (setq neo-autorefresh nil)
 
+;; Setup flycheck
+(require 'flymake)
+(global-set-key (kdb "C-c f c") 'flymake-show-diagnostics-buffer)
 
 (require 'javascript-bundle)
 (require 'json-bundle)
