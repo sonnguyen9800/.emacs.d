@@ -109,8 +109,22 @@
 ;; ;; Auto open lsp when the detected file matched any given extension
 
 ;; ;; ===================== Setup lsp-ui-mode
+(require 'lsp-ui-flycheck)
+(setq lsp-prefer-flymake nil) 
 (setq lsp-ui-doc-enable nil)
-(setq lsp-ui-peek-enable nil)
+
+(setq lsp-ui-sideline-enable t
+      lsp-ui-sideline-ignore-duplicate t
+      lsp-ui-sideline-show-symbol t
+      lsp-ui-sideline-show-hover t
+      lsp-ui-sideline-show-diagnostics t
+      lsp-ui-sideline-show-code-actions t
+      lsp-ui-sideline-code-actions-prefix ""
+      
+      lsp-ui-peek-enable t
+      lsp-ui-peek-peek-height 20
+      lsp-ui-peek-list-width 50
+ )
 
 ;;==================== Setup dashboard: https://github.com/emacs-dashboard/emacs-dashboard
 (require 'dashboard)
@@ -176,8 +190,7 @@
 (setq neo-autorefresh nil)
 
 ;; Setup flycheck
-(require 'flymake)
-(global-set-key (kdb "C-c f c") 'flymake-show-diagnostics-buffer)
+
 
 (require 'javascript-bundle)
 (require 'json-bundle)
