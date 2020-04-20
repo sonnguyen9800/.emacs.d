@@ -1,6 +1,7 @@
 ;;This is all config for javascript development packages
 
 (require 'js2-mode)
+(setq js2-basic-offset 2)
 
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 

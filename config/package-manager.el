@@ -75,8 +75,8 @@
 ;;==================== Setup centaurs-tab
 (require 'centaur-tabs)
 (centaur-tabs-mode t)
-(global-set-key (kbd "C-c -")  'centaur-tabs-backward)
-(global-set-key (kbd "C-c =") 'centaur-tabs-forward)
+(global-set-key (kbd "C-c <left>")  'centaur-tabs-backward)
+(global-set-key (kbd "C-c <right>") 'centaur-tabs-forward)
 (setq centaur-tabs-set-icons t)
 (setq centaur-tabs-gray-out-icons 'buffer)
 (setq centaur-tabs-set-bar 'over)
@@ -139,7 +139,9 @@
 (require 'indent-guide)
 (indent-guide-global-mode)
 ;;================= Setup smart-tabs-mode
-(smart-tabs-insinuate 'c 'javascript)
+;; (smart-tabs-insinuate 'c 'javascript)
+;; (smart-tabs-advice js2-indent-line js2-basic-offset)
+
 
 ;;================= Setup smart-semicolons
 (require 'smart-semicolon)
