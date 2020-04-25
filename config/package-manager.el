@@ -104,8 +104,9 @@
 
 (global-set-key (kbd "C-c l s") 'lsp)
 (add-hook 'php-mode-hook #'lsp)
-(add-hook 'web-mode-hook' #'lsp)
-
+(add-hook 'web-mode-hook #'lsp)
+;;(add-hook 'js2-mode-hook #'lsp)
+;;
 ;; ;; Auto open lsp when the detected file matched any given extension
 
 ;; ;; ===================== Setup lsp-ui-mode
