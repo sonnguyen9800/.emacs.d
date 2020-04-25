@@ -33,10 +33,9 @@
                       t)))
 
 
-
+(require 'ag)
 (require 'js2-refactor)
 (require 'xref-js2)
-
 
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
 (js2r-add-keybindings-with-prefix "C-c C-r")
@@ -52,7 +51,9 @@
 
 ;; Edit with RJSX:
 (add-hook 'rjsx-mode-hook #'js2-refactor-mode)
-(js2r-add-keybindings-with-prefix "C-c C-r")
+;;(js2r-add-keybindings-with-prefix "C-c C-r")
+(add-hook 'rjsx-mode-hook (lambda ()
+  (add-hook 'xref-backend-functions #'xref-js2-xref-backend nil t)))
 
 
 

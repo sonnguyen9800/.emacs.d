@@ -1,5 +1,5 @@
 ;;Package to be installed:
-(setq package-list '(magit
+(setq package-list '(magit ag
 		     tern company-tern js2-refactor xref-js2 rjsx-mode js2-mode
 		     yasnippet web-mode 			   			   
 		     helm neotree beacon solarized-theme centaur-tabs dashboard
