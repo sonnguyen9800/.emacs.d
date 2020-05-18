@@ -14,9 +14,7 @@
 ;; Quick highlighting and programming on Web: web-mode
 ;; Javascript Development: rjsx-mode
 
-;; PHP Mode: php-mode, company-php, php-auto-yasnippets
-
-;; 
+;; PHP Mode: php-mode, company-php
 
 
 ;; Navigation: help, neotree
