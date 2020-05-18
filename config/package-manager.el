@@ -95,37 +95,6 @@
 (custom-set-variables
  '(zoom-size '(0.618 . 0.618)))
 
-;;================ Setup company-lsp
-(require 'company-lsp)
-(push 'company-lsp company-backends)
-
-;; ;;===================== Setup lsp-mode
-(require 'lsp-mode)
-
-(global-set-key (kbd "C-c l s") 'lsp)
-(add-hook 'php-mode-hook #'lsp)
-(add-hook 'web-mode-hook #'lsp)
-;;(add-hook 'js2-mode-hook #'lsp)
-;;
-;; ;; Auto open lsp when the detected file matched any given extension
-
-;; ;; ===================== Setup lsp-ui-mode
-(require 'lsp-ui-flycheck)
-(setq lsp-prefer-flymake nil) 
-(setq lsp-ui-doc-enable nil)
-
-(setq lsp-ui-sideline-enable t
-      lsp-ui-sideline-ignore-duplicate t
-      lsp-ui-sideline-show-symbol t
-      lsp-ui-sideline-show-hover t
-      lsp-ui-sideline-show-diagnostics t
-      lsp-ui-sideline-show-code-actions t
-      lsp-ui-sideline-code-actions-prefix ""
-      
-      lsp-ui-peek-enable t
-      lsp-ui-peek-peek-height 20
-      lsp-ui-peek-list-width 50
- )
 
 ;;==================== Setup dashboard: https://github.com/emacs-dashboard/emacs-dashboard
 (require 'dashboard)
@@ -146,7 +115,6 @@
        ;; If there is more than one, they won't work right.
  '(dashboard-footer-messages  (read-lines "~/.emacs.d/footnotes-dashboard.txt")))
  
-
 ;;=================== Setup page-break-lines: https://github.com/purcell/page-break-lines
 (require 'page-break-lines)
 (turn-on-page-break-lines-mode)
@@ -156,7 +124,6 @@
 ;;================= Setup smart-tabs-mode
 ;; (smart-tabs-insinuate 'c 'javascript)
 ;; (smart-tabs-advice js2-indent-line js2-basic-offset)
-
 
 ;;================= Setup smart-semicolons
 (require 'smart-semicolon)
@@ -187,10 +154,7 @@
 
 ;; need another one for python stuff, since this gets re-bound
 (global-set-key (kbd "C-c C-p") 'neotree-project-dir)
-
 (setq neo-autorefresh nil)
-
-;; Setup flycheck
 
 
 (require 'javascript-bundle)

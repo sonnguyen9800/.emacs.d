@@ -1,13 +1,13 @@
 ;;Package to be installed:
 (setq package-list '(magit ag
-		     tern company-tern js2-refactor xref-js2 rjsx-mode js2-mode
+		     js2-refactor xref-js2 rjsx-mode js2-mode
 		     yasnippet web-mode 			   			   
 		     helm neotree beacon solarized-theme centaur-tabs dashboard
 		     projectile
 		     php-mode company-php php-auto-yasnippets json-mode
-		     lsp-mode company-lsp flycheck ido-vertical-mode 
+		     flycheck ido-vertical-mode 
 		     linum smart-tabs-mode smart-semicolon
-		     emmet-mode web-beautify auto-complete highlight-parentheses zoom))
+		     emmet-mode highlight-parentheses zoom))
 (package-initialize)
 
 ;; Quick snippet insertion: yasnippet
