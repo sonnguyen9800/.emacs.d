@@ -23,12 +23,10 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(dashboard-footer-messages (read-lines "~/.emacs.d/footnotes-dashboard.txt"))
- '(helm-ff-lynx-style-map t t)
+ '(helm-ff-lynx-style-map t)
  '(inhibit-startup-screen t)
  '(js-indent-level 4)
- '(package-selected-packages
-   (quote
-    (aggressive-indent ag xref-js2 js2-refactor yasnippet-snippets ## yasnippet)))
+ '(package-selected-packages (quote (lsp-mode yasnippet-snippets ## yasnippet)))
  '(zoom-mode t nil (zoom))
  '(zoom-size (quote (0.618 . 0.618))))
 (custom-set-faces

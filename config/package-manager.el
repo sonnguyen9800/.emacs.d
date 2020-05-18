@@ -3,7 +3,11 @@
 (add-to-list 'load-path "~/.emacs.d/config/php-bundle.el")
 (add-to-list 'load-path "~/.emacs.d/config/yaml-bundle.el")
 (add-to-list 'load-path "~/.emacs.d/config/html-css-bundle.el")
-(add-to-list 'load-path "~/.emacs.d/config/json-bundle.el.el")
+(add-to-list 'load-path "~/.emacs.d/config/json-bundle.el")
+
+
+
+(add-to-list 'load-path "~/.emacs.d/config/lsp-bundle.el")
 
 ;;===================== Yasnippet =========
 (custom-set-variables
@@ -157,10 +161,20 @@
 (setq neo-autorefresh nil)
 
 
+
+
+
+
+
 (require 'javascript-bundle)
+
+
+
 (require 'json-bundle)
-(require 'php-bundle)
+;; (require 'php-bundle)
 (require 'yaml-bundle)
 (require 'html-css-bundle)
+(require 'lsp-bundle)
+
 
 (provide 'package-manager)
