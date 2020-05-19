@@ -128,6 +128,11 @@
 (setq neo-smart-open t)
 (setq projectile-switch-project-action 'neotree-projectile-action)
 
+;;================ Company Mode
+
+(setq company-minimum-prefix-length 2)
+
+
 
 ;;================= Synch between neotree and projectile
 ;; NeoTree can be opened (toggled) at projectile project root
