@@ -123,7 +123,9 @@
 (add-hook 'js2-mode-hook #'smart-semicolon-mode)
 (add-hook 'javascript-mode-hook #'smart-semicolon-mode)
 (add-hook 'rjsx-mode-hook #'smart-semicolon-mode)
-(add-hook 'ng2-mode-hook #'smart-semicolon-mode)
+(add-hook 'ng2-mode-hook  #'smart-semicolon-mode)
+(add-hook 'typescript-mode-hook  #'smart-semicolon-mode)
+
 ;;================= Setup neotree
 (setq neo-smart-open t)
 (setq projectile-switch-project-action 'neotree-projectile-action)
