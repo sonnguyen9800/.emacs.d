@@ -26,9 +26,7 @@
  '(helm-ff-lynx-style-map t)
  '(inhibit-startup-screen t)
  '(js-indent-level 4)
- '(package-selected-packages
-   (quote
-    (ng2-mode typescript-mode lsp-ui lsp-mode yasnippet-snippets ## yasnippet)))
+ '(package-selected-packages (quote (lsp-ui company yasnippet-snippets ## yasnippet)))
  '(zoom-mode t nil (zoom))
  '(zoom-size (quote (0.618 . 0.618))))
 (custom-set-faces

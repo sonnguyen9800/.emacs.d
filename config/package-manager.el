@@ -1,12 +1,7 @@
 
 
 ;; Loading programing bundle
-(add-to-list 'load-path "~/.emacs.d/config/dev-bundle/javascript-bundle.el")
-(add-to-list 'load-path "~/.emacs.d/config/dev-bundle/php-bundle.el")
-(add-to-list 'load-path "~/.emacs.d/config/dev-bundle/yaml-bundle.el")
-(add-to-list 'load-path "~/.emacs.d/config/dev-bundle/html-css-bundle.el")
-(add-to-list 'load-path "~/.emacs.d/config/dev-bundle/json-bundle.el")
-(add-to-list 'load-path "~/.emacs.d/config/dev-bundle/ng.el")
+(add-to-list 'load-path "~/.emacs.d/config/dev-bundle/")
 
 
 ;; Loading LSP
@@ -29,10 +24,6 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 (global-set-key (kbd "C-c C-y") 'yas-insert-snippet)
-;;===================== Company-mode ==========================
-(setq company-minimum-prefix-length 1)
-(setq company-dabbrev-downcase 0)
-(setq company-idle-delay 0)
 (add-hook 'after-init-hook 'global-company-mode)
 
 ;;===================== Beacon: https://github.com/Malabarba/beacon
@@ -125,12 +116,6 @@
 ;;=================== Setup page-break-lines: https://github.com/purcell/page-break-lines
 (require 'page-break-lines)
 (turn-on-page-break-lines-mode)
-;;================== Setup intent-guide: https://github.com/zk-phi/indent-guide
-(require 'indent-guide)
-(indent-guide-global-mode)
-;;================= Setup smart-tabs-mode
-;; (smart-tabs-insinuate 'c 'javascript)
-;; (smart-tabs-advice js2-indent-line js2-basic-offset)
 
 ;;================= Setup smart-semicolons
 (require 'smart-semicolon)
@@ -138,7 +123,7 @@
 (add-hook 'js2-mode-hook #'smart-semicolon-mode)
 (add-hook 'javascript-mode-hook #'smart-semicolon-mode)
 (add-hook 'rjsx-mode-hook #'smart-semicolon-mode)
-
+(add-hook 'ng2-mode-hook #'smart-semicolon-mode)
 ;;================= Setup neotree
 (setq neo-smart-open t)
 (setq projectile-switch-project-action 'neotree-projectile-action)
@@ -163,23 +148,14 @@
 (global-set-key (kbd "C-c C-p") 'neotree-project-dir)
 (setq neo-autorefresh nil)
 
-
-
-
-
-
-
 ;;(require 'javascript-bundle)
-
-
-
 ;;(require 'json-bundle)
 ;; (require 'php-bundle)
 ;;(require 'yaml-bundle)
 ;;(require 'html-css-bundle)
 
 
-(require 'lsp-bundle)
+;;(require 'lsp-bundle)
 (require 'ng-bundle)
 
 (provide 'package-manager)

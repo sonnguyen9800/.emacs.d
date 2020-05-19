@@ -1,10 +1,10 @@
 ;;Package to be installed:
 (setq package-list '(magit ag projectile
 		     js2-refactor xref-js2 rjsx-mode js2-mode		     
-		     php-mode company-php php-auto-yasnippets
+		     php-mode php-auto-yasnippets
 		     json-mode web-mode yasnippet emmet-mode
-		     lsp-mode lsp-ui flycheck
-		     linum smart-tabs-mode smart-semicolon highlight-parentheses zoom neotree beacon solarized-theme centaur-tabs dashboard  ido-vertical-mode
+		     lsp-mode
+		     linum smart-tabs-mode smart-semicolon highlight-parentheses zoom neotree beacon solarized-theme centaur-tabs dashboard  ido-vertical-mode helm all-the-icons
 		     typescript-mode ng2-mode
 		     ))
 
