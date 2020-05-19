@@ -1,20 +1,28 @@
 ;;Package to be installed:
-(setq package-list '(magit ag
-		     js2-refactor xref-js2 rjsx-mode js2-mode
-		     yasnippet web-mode neotree beacon solarized-theme centaur-tabs dashboard
-		     projectile
-		     php-mode company-php php-auto-yasnippets json-mode
-		     flycheck ido-vertical-mode
-		     lsp-mode lsp-ui
-		     linum smart-tabs-mode smart-semicolon
-		     emmet-mode highlight-parentheses zoom))
+(setq package-list '(magit ag projectile
+		     js2-refactor xref-js2 rjsx-mode js2-mode		     
+		     php-mode company-php php-auto-yasnippets
+		     json-mode web-mode yasnippet emmet-mode
+		     lsp-mode lsp-ui flycheck
+		     linum smart-tabs-mode smart-semicolon highlight-parentheses zoom neotree beacon solarized-theme centaur-tabs dashboard  ido-vertical-mode
+		     typescript ng2-mode
+		     ))
+
 (package-initialize)
 
 ;; Quick snippet insertion: yasnippet
 ;; Quick highlighting and programming on Web: web-mode
 ;; Javascript Development: rjsx-mode
 
+;; React development: rjsx
+
+
+;; Angular Development: typescript, ng2-mode
+
+
 ;; PHP Mode: php-mode, company-php
+
+
 
 
 ;; Navigation: help, neotree
