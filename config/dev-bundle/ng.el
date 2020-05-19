@@ -1,5 +1,3 @@
 
 
-
-
 (provide 'ng-bundle)

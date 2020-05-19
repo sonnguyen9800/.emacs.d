@@ -5,7 +5,7 @@
 		     json-mode web-mode yasnippet emmet-mode
 		     lsp-mode lsp-ui flycheck
 		     linum smart-tabs-mode smart-semicolon highlight-parentheses zoom neotree beacon solarized-theme centaur-tabs dashboard  ido-vertical-mode
-		     typescript ng2-mode
+		     typescript-mode ng2-mode
 		     ))
 
 (package-initialize)

@@ -1,12 +1,15 @@
 
-(add-to-list 'load-path "~/.emacs.d/config/javascript-bundle.el")
-(add-to-list 'load-path "~/.emacs.d/config/php-bundle.el")
-(add-to-list 'load-path "~/.emacs.d/config/yaml-bundle.el")
-(add-to-list 'load-path "~/.emacs.d/config/html-css-bundle.el")
-(add-to-list 'load-path "~/.emacs.d/config/json-bundle.el")
+
+;; Loading programing bundle
+(add-to-list 'load-path "~/.emacs.d/config/dev-bundle/javascript-bundle.el")
+(add-to-list 'load-path "~/.emacs.d/config/dev-bundle/php-bundle.el")
+(add-to-list 'load-path "~/.emacs.d/config/dev-bundle/yaml-bundle.el")
+(add-to-list 'load-path "~/.emacs.d/config/dev-bundle/html-css-bundle.el")
+(add-to-list 'load-path "~/.emacs.d/config/dev-bundle/json-bundle.el")
+(add-to-list 'load-path "~/.emacs.d/config/dev-bundle/ng.el")
 
 
-
+;; Loading LSP
 (add-to-list 'load-path "~/.emacs.d/config/lsp-bundle.el")
 
 ;;===================== Yasnippet =========
@@ -166,15 +169,17 @@
 
 
 
-(require 'javascript-bundle)
+;;(require 'javascript-bundle)
 
 
 
-(require 'json-bundle)
+;;(require 'json-bundle)
 ;; (require 'php-bundle)
-(require 'yaml-bundle)
-(require 'html-css-bundle)
-(require 'lsp-bundle)
+;;(require 'yaml-bundle)
+;;(require 'html-css-bundle)
 
+
+(require 'lsp-bundle)
+(require 'ng-bundle)
 
 (provide 'package-manager)
