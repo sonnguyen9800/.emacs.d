@@ -155,12 +155,12 @@
 (global-set-key (kbd "C-c C-p") 'neotree-project-dir)
 (setq neo-autorefresh nil)
 
-;;(require 'javascript-bundle)
-;;(require 'json-bundle)
-;; (require 'php-bundle)
-;;(require 'yaml-bundle)
-;;(require 'html-css-bundle)
-
+(require 'javascript-bundle)
+(require 'json-bundle)
+ (require 'php-bundle)
+(require 'yaml-bundle)
+(require 'html-css-bundle)
+(require 'typescript-bundle)
 
 ;;(require 'lsp-bundle)
 (require 'ng-bundle)

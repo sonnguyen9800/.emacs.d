@@ -7,6 +7,7 @@
 
 ;; Load theme: solarized-theme
 (load-theme 'solarized-dark t)
+(sml/setup)
 
 
 (provide 'theme)
