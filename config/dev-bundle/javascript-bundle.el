@@ -6,7 +6,6 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
 (require 'company)
-(require 'company-tern)
 
 
 
