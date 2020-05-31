@@ -2,8 +2,6 @@
 
 ;; Loading programing bundle
 (add-to-list 'load-path "~/.emacs.d/config/dev-bundle/")
-
-
 ;; Loading LSP
 (add-to-list 'load-path "~/.emacs.d/config/lsp-bundle.el")
 
@@ -161,8 +159,9 @@
 (require 'yaml-bundle)
 (require 'html-css-bundle)
 (require 'typescript-bundle)
-
-;;(require 'lsp-bundle)
 (require 'ng-bundle)
 
+
+
+;;(require 'lsp-bundle)
 (provide 'package-manager)
