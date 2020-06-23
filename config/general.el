@@ -117,5 +117,15 @@
 (make-directory "~/.emacs.d/autosaves/" t)
 
 
+;; Turn off the beep sound of emacs and flash instead
+
+ (defun my-terminal-visible-bell ()
+   "A friendlier visual bell effect."
+   (invert-face 'mode-line)
+   (run-with-timer 0.1 nil 'invert-face 'mode-line))
+ 
+ (setq visible-bell nil
+       ring-bell-function 'my-terminal-visible-bell)
+
 
 (provide 'general)
