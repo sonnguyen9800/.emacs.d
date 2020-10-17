@@ -155,12 +155,12 @@
 
 (require 'javascript-bundle)
 (require 'json-bundle)
- (require 'php-bundle)
+(require 'php-bundle)
 (require 'yaml-bundle)
 (require 'html-css-bundle)
 (require 'typescript-bundle)
 (require 'ng-bundle)
-
+(require 'csharp-bundle)
 
 
 ;;(require 'lsp-bundle)
