@@ -163,5 +163,5 @@
 (require 'csharp-bundle)
 
 
-;;(require 'lsp-bundle)
+(require 'lsp-bundle)
 (provide 'package-manager)
