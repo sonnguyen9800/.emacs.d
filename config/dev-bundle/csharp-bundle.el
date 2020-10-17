@@ -2,14 +2,15 @@
 (add-to-list 'auto-mode-alist '("\\.cs?\\'" . company-mode))
 (add-to-list 'auto-mode-alist '("\\.cs?\\'" . csharp-mode))
 
-;; For Unity Developer
-(setq lsp-enable-file-watchers 
 
-"/[Ll]ibrary/"
-"/[Tt]emp/"
-"/[Oo]bj/"
-"/[Bb]uild/"
-"/[Bb]uilds/"
+;; For Unity Developer
+;;(setq lsp-enable-file-watchers '(""))
+
+(setq lsp-enable-file-watchers 
+'("/[Ll]ibrary/", "/[Tt]emp/",
+"/[Oo]bj/",
+"/[Bb]uild/",
+"/[Bb]uilds/",
 "/[Ll]ogs/"
 "/[Uu]ser[Ss]ettings/"
 "/[Mm]emoryCaptures/"
@@ -43,4 +44,6 @@
 "/[Aa]ssets/[Ss]treamingAssets/aa.meta"
 "/[Aa]ssets/[Ss]treamingAssets/aa/*"
 )
+)
+
 (provide 'csharp-bundle)

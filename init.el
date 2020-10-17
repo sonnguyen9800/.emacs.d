@@ -1,5 +1,8 @@
 (add-to-list 'load-path "~/.emacs.d/config/")
 (add-to-list 'load-path "~/.emacs.d/appearance/")
+;; Hide warning from the depecration of "cl" package
+
+(setq byte-compile-warnings '(cl-functions))
 
 ;; Melpa - Package Manager
 (require 'package)
@@ -14,7 +17,6 @@
 
 (require 'theme)
 
-(package-initialize)
 
 
 (custom-set-variables
