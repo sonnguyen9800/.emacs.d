@@ -3,6 +3,7 @@
 
 (setq lsp-file-watch-ignored 
       '(
+	"*.meta"
 	"Library"
 	"Temp"
 	"Obj"

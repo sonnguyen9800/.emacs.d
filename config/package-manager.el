@@ -130,7 +130,7 @@
 
 ;;================ Company Mode
 
-(setq company-minimum-prefix-length 2)
+(setq company-minimum-prefix-length 1)
 
 
 
