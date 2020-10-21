@@ -161,7 +161,8 @@
 (require 'typescript-bundle)
 (require 'ng-bundle)
 (require 'csharp-bundle)
-
+(require 'python-bundle)
 
 (require 'lsp-bundle)
+
 (provide 'package-manager)

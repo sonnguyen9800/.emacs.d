@@ -7,6 +7,7 @@
 		     linum smart-tabs-mode smart-semicolon highlight-parentheses zoom neotree beacon solarized-theme centaur-tabs dashboard  ido-vertical-mode helm all-the-icons
 		     typescript-mode ng2-mode
 		     yaml-mode
+		     python-mode
 		     ))
 
 (package-initialize)
