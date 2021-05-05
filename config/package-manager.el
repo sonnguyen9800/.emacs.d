@@ -110,10 +110,9 @@
        ;; Your init file should contain only one such instance.
        ;; If there is more than one, they won't work right.
  '(dashboard-footer-messages  (read-lines "~/.emacs.d/footnotes-dashboard.txt")))
- 
+  
 ;;=================== Setup page-break-lines: https://github.com/purcell/page-break-lines
 (require 'page-break-lines)
-(turn-on-page-break-lines-mode)
 
 ;;================= Setup smart-semicolons
 (require 'smart-semicolon)
@@ -155,13 +154,13 @@
 
 (require 'javascript-bundle)
 (require 'json-bundle)
-(require 'php-bundle)
+;;(require 'php-bundle)
 (require 'yaml-bundle)
 (require 'html-css-bundle)
 (require 'typescript-bundle)
 (require 'ng-bundle)
-(require 'csharp-bundle)
-(require 'python-bundle)
+;;(require 'csharp-bundle)
+;;(require 'python-bundle)
 
 (require 'lsp-bundle)
 
